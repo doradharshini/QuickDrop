@@ -26,6 +26,12 @@ PLACED -> ACCEPTED -> PREPARING -> READY -> PICKED_UP -> DELIVERED
 
 `DELIVERED` and `CANCELLED` are terminal. Any other move returns `409 Conflict` with the list of allowed next statuses. The rules live in one place, [`OrderStatus`](src/main/java/com/quickdrop/order/OrderStatus.java).
 
+## Design docs
+
+- [User flow](docs/user-flow.md)
+- [High-level design](docs/hld.md)
+- [Low-level design](docs/lld.md)
+
 ## Run
 
 ```bash
